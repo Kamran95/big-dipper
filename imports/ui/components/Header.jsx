@@ -151,6 +151,7 @@ export default class Header extends Component {
 
   shouldLogin = () => {
     let pathname = this.props.location.pathname;
+    console.log(this.props.location.pathname, "--------------")
     let groups;
     let match =
       pathname.match(SendPath) ||
